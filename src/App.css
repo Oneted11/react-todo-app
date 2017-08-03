@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+margin-left: 25%;
 }
 
 .App-logo {
@@ -17,6 +17,44 @@
 .App-intro {
   font-size: large;
 }
+.TodoList{
+  text-align: auto;
+  padding-left: 0.5em; 
+  color: red;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+li{
+  background-color:rgba(240, 245, 240, 0.62);
+  margin-top: 0.75em;
+  border-radius: 2.5%;
+  border-color: rgba(89, 185, 89, 0.48);
+  border-style: solid;
+  padding: 0.5em;
+}
+button{
+  display: inline;
+  border-radius:0em;
+  border-style: none;
+  padding: auto;
+  width: 23%;
+  height: 2em;
+  padding: auto;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input{
+  width: 75%;
+  height: 2em;  
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border-style: none;
+}
+form{
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

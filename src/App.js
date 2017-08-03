@@ -14,16 +14,26 @@ onChange = (event) =>{
 }
 onClick=(event)=>{
   event.preventDefault();
+  if (this.state.newItem==='') {
+  	console.log('blackspaces not allowed');
+  }else{
   this.setState({items:this.state.items.concat(this.state.newItem)});
+  this.setState({newItem:''});
+ }
 }
 render () {
   return (
-    <div>
+    
+    <div className='TodoList'>
       <TodoList items={this.state.items}></TodoList>
-      <input value = {this.state.newItem} onChange = {this.onChange.bind(this)}></input>
-      <button onClick = {this.onClick.bind(this)}>+</button>
+      <form onSubmit ={this.onClick.bind(this)}>
+          <input value = {this.state.newItem} onChange = {this.onChange.bind(this)}></input>
+				
+				          <button onClick = {this.onClick.bind(this)}>+</button>
+				
+      </form>
     </div>
-    );
+   );
 }
 }
 
